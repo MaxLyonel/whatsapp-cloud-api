@@ -212,4 +212,9 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
+    // Variables whatsapp cloud api
+    'phone_number_id' => env('PHONE_NUMBER_ID', null),
+    'version' => env('VERSION', 'v13.0'),
+    'user_access_token' => env('USER_ACCESS_TOKEN', null),
+
 ];

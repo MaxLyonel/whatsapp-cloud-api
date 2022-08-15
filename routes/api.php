@@ -18,5 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/mensaje', [App\Http\Controllers\MessageController::class, 'index']);
+Route::post('/mensaje', [App\Http\Controllers\MessageController::class, 'sendText']);
 
