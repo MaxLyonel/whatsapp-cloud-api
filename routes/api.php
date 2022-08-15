@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/mensaje', [App\Http\Controllers\MessageController::class, 'sendText']);
 
+Route::get('/leer', [App\Http\Controllers\MessageController::class, 'markMessageAsRead']);
+
