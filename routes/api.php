@@ -22,3 +22,8 @@ Route::post('/mensaje', [App\Http\Controllers\MessageController::class, 'sendTex
 
 Route::get('/leer', [App\Http\Controllers\MessageController::class, 'markMessageAsRead']);
 
+
+Route::get('/test', [App\Http\Controllers\MessageController::class, 'test']);
+Route::post('/plantilla', [App\Http\Controllers\MessageController::class, 'sendMessageTemplateText']);
+Route::post('/multimedia', [App\Http\Controllers\MessageController::class, 'sendMessageTemplateMultiMedia']);
+
